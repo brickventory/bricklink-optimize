@@ -33,3 +33,29 @@ item2 | 0 | 0
 item3 | 2 | 0.20
 
 1. AvailabilityList
+
+## Example
+
+I have a want list with required bricks:
+
+|     | i1  | i2  | i3  | i4  | i5  |
+| --- | --- | --- | --- | --- | --- |
+| r   | 2   | 5   | 4   | 1   | 3   |
+
+- Items `I` with i1 ... i5
+- Seller `S` with s1 ... s5
+
+Build an availability and pricing list:
+
+|     | a1  | a2  | a3  | a4  | a5  | p1  | p2  | p3  | p4  | p5  | v   | h   | 
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| s1  | 0   | 2   | 10  | --- | --- | 0   | --- | --- | --- | --- | --- | 1   | 
+| s2  | 9   | 0   | 2   | --- | --- | --- | 0   | --- | --- | --- | 0   | 1   |  
+| s3  | 5   | 4   | 0   | --- | --- | --- | --- | 0   | --- | --- | --- | 1   | 
+| s4  | 10  | 1   | 8   | 0   | --- | --- | --- | --- | 0   | --- | --- | 1   | 
+| s5  | 20  | 3   | 5   | 10  | 0   | --- | --- | --- | --- | 0   | --- | 1   |
+
+- a`i` availability
+- p`i` price
+- v order value
+- h handling cost
